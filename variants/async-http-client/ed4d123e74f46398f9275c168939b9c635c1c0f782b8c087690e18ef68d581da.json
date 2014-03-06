@@ -1,0 +1,212 @@
+{
+  "id" : "async-http-client",
+  "info" : { },
+  "attributes" : {
+    "organization" : [ "com.ning" ],
+    "name" : [ "async-http-client" ],
+    "version" : [ "1.7.18" ]
+  },
+  "configurations" : [ {
+    "id" : "compile",
+    "extends-configurations" : [ ],
+    "info" : { },
+    "artifacts" : [ ],
+    "attributes" : {
+      "organization" : [ "com.ning" ],
+      "name" : [ "async-http-client" ],
+      "version" : [ "1.7.18" ]
+    },
+    "requirements" : [ {
+      "id" : "netty",
+      "configurations" : [ "compile", "master" ],
+      "constraints" : { }
+    }, {
+      "id" : "slf4j-api",
+      "configurations" : [ "compile", "master" ],
+      "constraints" : { }
+    } ]
+  }, {
+    "id" : "master",
+    "extends-configurations" : [ ],
+    "info" : { },
+    "artifacts" : [ {
+      "hash" : "4ed3ef1417f39abe83f6c202d71131d6c41011462747a958fd99ab4ec7c4b3d6",
+      "attributes" : {
+        "configurations" : [ "master" ]
+      },
+      "filename" : "async-http-client-1.7.18.jar"
+    } ],
+    "attributes" : {
+      "organization" : [ "com.ning" ],
+      "name" : [ "async-http-client" ],
+      "version" : [ "1.7.18" ]
+    },
+    "requirements" : [ {
+      "id" : "netty",
+      "configurations" : [ ],
+      "constraints" : { }
+    }, {
+      "id" : "slf4j-api",
+      "configurations" : [ ],
+      "constraints" : { }
+    } ]
+  }, {
+    "id" : "javadoc",
+    "extends-configurations" : [ ],
+    "info" : { },
+    "artifacts" : [ ],
+    "attributes" : {
+      "organization" : [ "com.ning" ],
+      "name" : [ "async-http-client" ],
+      "version" : [ "1.7.18" ]
+    },
+    "requirements" : [ {
+      "id" : "netty",
+      "configurations" : [ ],
+      "constraints" : { }
+    }, {
+      "id" : "slf4j-api",
+      "configurations" : [ ],
+      "constraints" : { }
+    } ]
+  }, {
+    "id" : "test",
+    "extends-configurations" : [ ],
+    "info" : { },
+    "artifacts" : [ ],
+    "attributes" : {
+      "organization" : [ "com.ning" ],
+      "name" : [ "async-http-client" ],
+      "version" : [ "1.7.18" ]
+    },
+    "requirements" : [ {
+      "id" : "netty",
+      "configurations" : [ ],
+      "constraints" : { }
+    }, {
+      "id" : "slf4j-api",
+      "configurations" : [ ],
+      "constraints" : { }
+    } ]
+  }, {
+    "id" : "provided",
+    "extends-configurations" : [ ],
+    "info" : { },
+    "artifacts" : [ ],
+    "attributes" : {
+      "organization" : [ "com.ning" ],
+      "name" : [ "async-http-client" ],
+      "version" : [ "1.7.18" ]
+    },
+    "requirements" : [ {
+      "id" : "netty",
+      "configurations" : [ ],
+      "constraints" : { }
+    }, {
+      "id" : "slf4j-api",
+      "configurations" : [ ],
+      "constraints" : { }
+    } ]
+  }, {
+    "id" : "sources",
+    "extends-configurations" : [ ],
+    "info" : { },
+    "artifacts" : [ ],
+    "attributes" : {
+      "organization" : [ "com.ning" ],
+      "name" : [ "async-http-client" ],
+      "version" : [ "1.7.18" ]
+    },
+    "requirements" : [ {
+      "id" : "netty",
+      "configurations" : [ ],
+      "constraints" : { }
+    }, {
+      "id" : "slf4j-api",
+      "configurations" : [ ],
+      "constraints" : { }
+    } ]
+  }, {
+    "id" : "optional",
+    "extends-configurations" : [ ],
+    "info" : { },
+    "artifacts" : [ ],
+    "attributes" : {
+      "organization" : [ "com.ning" ],
+      "name" : [ "async-http-client" ],
+      "version" : [ "1.7.18" ]
+    },
+    "requirements" : [ {
+      "id" : "netty",
+      "configurations" : [ ],
+      "constraints" : { }
+    }, {
+      "id" : "slf4j-api",
+      "configurations" : [ ],
+      "constraints" : { }
+    } ]
+  }, {
+    "id" : "system",
+    "extends-configurations" : [ ],
+    "info" : { },
+    "artifacts" : [ ],
+    "attributes" : {
+      "organization" : [ "com.ning" ],
+      "name" : [ "async-http-client" ],
+      "version" : [ "1.7.18" ]
+    },
+    "requirements" : [ {
+      "id" : "netty",
+      "configurations" : [ ],
+      "constraints" : { }
+    }, {
+      "id" : "slf4j-api",
+      "configurations" : [ ],
+      "constraints" : { }
+    } ]
+  }, {
+    "id" : "runtime",
+    "extends-configurations" : [ ],
+    "info" : { },
+    "artifacts" : [ ],
+    "attributes" : {
+      "organization" : [ "com.ning" ],
+      "name" : [ "async-http-client" ],
+      "version" : [ "1.7.18" ]
+    },
+    "requirements" : [ {
+      "id" : "netty",
+      "configurations" : [ "master", "runtime", "compile" ],
+      "constraints" : { }
+    }, {
+      "id" : "slf4j-api",
+      "configurations" : [ "master", "runtime", "compile" ],
+      "constraints" : { }
+    } ]
+  }, {
+    "id" : "default",
+    "extends-configurations" : [ ],
+    "info" : { },
+    "artifacts" : [ {
+      "hash" : "4ed3ef1417f39abe83f6c202d71131d6c41011462747a958fd99ab4ec7c4b3d6",
+      "attributes" : {
+        "configurations" : [ "master" ]
+      },
+      "filename" : "async-http-client-1.7.18.jar"
+    } ],
+    "attributes" : {
+      "organization" : [ "com.ning" ],
+      "name" : [ "async-http-client" ],
+      "version" : [ "1.7.18" ]
+    },
+    "requirements" : [ {
+      "id" : "netty",
+      "configurations" : [ "master", "runtime", "compile" ],
+      "constraints" : { }
+    }, {
+      "id" : "slf4j-api",
+      "configurations" : [ "master", "runtime", "compile" ],
+      "constraints" : { }
+    } ]
+  } ]
+}

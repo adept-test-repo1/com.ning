@@ -1,0 +1,915 @@
+{
+  "id" : "async-http-client",
+  "variants" : [ "9788c9888c93a8ab87a4223d2e7bbb5487c2da7cb106a711d8ae88a1a5365f49", "8aa87da5ea4d6970b2994efb35a61c1186231913185089759d4f8d5f876b3d90", "c0a8a07c3425690b1b62527c6d1baef97f92218f31aff4e45ea0b8dc195c28ac", "4e5372d726454cfb9b69e5e29535ea52abf8d0fba0895b9f3c12bc2f2bd53ff8", "6286019ab5f66f16302e4baf8f895f50d783c900edbccab3ef3517066ae4725f", "ac9a48203bc73a678f241fc35131d28ab064e7d4e5e2d8c63bedbb1a4774d536", "76c1b7f873e6ca0ebe3af7529f2faa693c290060c8b873a8e58eefa364b1eaa8", "471ef508c4df2254c324db440b708412a15f11d3d7def8ee54566473bb1ddf8f", "bed468b7c25cc35bcc979a2f70d0fd7931b163ff39028b418f1240807f1cfa23", "97f63a8ca34645b7bf24df52e122e65ef44404a5dda7098c80a9ad1789712a6b", "017aa99f616b87610bb167619293b9106739817407ef7bb59bfd65ddf56d2729" ],
+  "configurations" : [ {
+    "id" : "test",
+    "repositories" : [ {
+      "id" : "slf4j-api/config/provided",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api/config/master",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/javadoc",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/compile",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/sources",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/optional",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api/config/system",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api/config/runtime",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api/config/test",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/default",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/provided",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/javadoc",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/runtime",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/default",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/optional",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/sources",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/test",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/system",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/master",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/compile",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    } ]
+  }, {
+    "id" : "provided",
+    "repositories" : [ {
+      "id" : "slf4j-api/config/provided",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api/config/master",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/javadoc",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/compile",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/sources",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/optional",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api/config/system",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api/config/runtime",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api/config/test",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/default",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/provided",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/javadoc",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/runtime",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/default",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/optional",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/sources",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/test",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/system",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/master",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/compile",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    } ]
+  }, {
+    "id" : "system",
+    "repositories" : [ {
+      "id" : "slf4j-api/config/provided",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api/config/master",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/javadoc",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/compile",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/sources",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/optional",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api/config/system",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api/config/runtime",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api/config/test",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/default",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/provided",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/javadoc",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/runtime",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/default",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/optional",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/sources",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/test",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/system",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/master",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/compile",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    } ]
+  }, {
+    "id" : "master",
+    "repositories" : [ {
+      "id" : "slf4j-api/config/provided",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api/config/master",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/javadoc",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/compile",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/sources",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/optional",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api/config/system",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api/config/runtime",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api/config/test",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/default",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/provided",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/javadoc",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/runtime",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/default",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/optional",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/sources",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/test",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/system",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/master",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/compile",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    } ]
+  }, {
+    "id" : "optional",
+    "repositories" : [ {
+      "id" : "slf4j-api/config/provided",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api/config/master",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/javadoc",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/compile",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/sources",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/optional",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api/config/system",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api/config/runtime",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api/config/test",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/default",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/provided",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/javadoc",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/runtime",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/default",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/optional",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/sources",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/test",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/system",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/master",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/compile",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    } ]
+  }, {
+    "id" : "compile",
+    "repositories" : [ {
+      "id" : "slf4j-api/config/provided",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api/config/master",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/javadoc",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/compile",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/sources",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/optional",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api/config/system",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api/config/runtime",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api/config/test",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/default",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/provided",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/javadoc",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/runtime",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/default",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/optional",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/sources",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/test",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/system",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/master",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/compile",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    } ]
+  }, {
+    "id" : "default",
+    "repositories" : [ {
+      "id" : "slf4j-api/config/provided",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api/config/master",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/javadoc",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/compile",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/sources",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/optional",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api/config/system",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api/config/runtime",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api/config/test",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/default",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/provided",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/javadoc",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/runtime",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/default",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/optional",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/sources",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/test",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/system",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/master",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/compile",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    } ]
+  }, {
+    "id" : "sources",
+    "repositories" : [ {
+      "id" : "slf4j-api/config/provided",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api/config/master",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/javadoc",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/compile",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/sources",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/optional",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api/config/system",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api/config/runtime",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api/config/test",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/default",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/provided",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/javadoc",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/runtime",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/default",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/optional",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/sources",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/test",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/system",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/master",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/compile",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    } ]
+  }, {
+    "id" : "javadoc",
+    "repositories" : [ {
+      "id" : "slf4j-api/config/provided",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api/config/master",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/javadoc",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/compile",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/sources",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/optional",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api/config/system",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api/config/runtime",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api/config/test",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/default",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/provided",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/javadoc",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/runtime",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/default",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/optional",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/sources",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/test",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/system",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/master",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/compile",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    } ]
+  }, {
+    "id" : "runtime",
+    "repositories" : [ {
+      "id" : "slf4j-api/config/provided",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api/config/master",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/javadoc",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/compile",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/sources",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/optional",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api/config/system",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api/config/runtime",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "slf4j-api/config/test",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/default",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/provided",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/javadoc",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/runtime",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/default",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/optional",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "slf4j-api/config/sources",
+      "repository" : "org.slf4j",
+      "commit" : "b72a08aa76132618165c0982fed9beb758fefa9f"
+    }, {
+      "id" : "netty/config/test",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/system",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/master",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    }, {
+      "id" : "netty/config/compile",
+      "repository" : "io.netty",
+      "commit" : "92766fe89713be0c9458118cafeea2aebff33f80"
+    } ]
+  } ]
+}
